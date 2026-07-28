@@ -150,17 +150,10 @@ const CoinDetail = () => {
         </h2>
         <ResponsiveContainer width="100%" height={280}>
           <LineChart data={chartData}>
-            <XAxis
-              dataKey="date"
-              tick={{ fontSize: 12 }}
-              stroke="currentColor"
-              className="text-slate-500 dark:text-gray-400"
-            />
+            <XAxis dataKey="date" tick={{ fontSize: 12, fill: "#94a3b8" }} />
             <YAxis
               domain={["auto", "auto"]}
-              tick={{ fontSize: 12 }}
-              stroke="currentColor"
-              className="text-slate-500 dark:text-gray-400"
+              tick={{ fontSize: 12, fill: "#94a3b8" }}
             />
             <Tooltip />
             <Line

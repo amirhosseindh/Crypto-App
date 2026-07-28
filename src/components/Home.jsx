@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+
+// Api
 import { getGlobalData, getCoin } from "../services/api";
+
+// components
 import Loader from "./Loader";
 import Coin from "./Coin";
 import ScrollToTopButton from "./shared/ScrollToTopButton";
